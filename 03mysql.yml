@@ -4,11 +4,11 @@
   tasks:
   - name: install mysql
     ansible.builtin.package:
-      name: mysql-serer
+      name: mysqld
       state: present
 
   - name: start mysql
     ansible.builtin.service:
-      name: mysql-servsr
+      name: mysqld
       state: started
       enabled: yes
