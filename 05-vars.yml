@@ -9,9 +9,9 @@
   tasks:
   - name: print the course info1
     vars:
-    Course: Devops
-    Duration: 250hrs
-    Trainer: Shivani
+      ourse: Devops
+      Duration: 250hrs
+      Trainer: Shivani
     ansible.builtin.debug:
       msg: "Course name is : {{ Course }}, Duration: {{ Duration }}, trainer: {{ Trainer }}"
 
