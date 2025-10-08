@@ -17,5 +17,6 @@
   tasks:
   - name: print numbers less  than 5
     ansible.builtin.debug:
+    loop: [ 0, 1, 5, 6, 8, 9 ]
       msg: " The numbers which are greater than 5: {{ numbers }}"
     when: numbers > 5

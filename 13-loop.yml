@@ -1,7 +1,7 @@
 - name: loops
   hosts: local
   connection: local
-  become: yess
+  become: yes
 
   tasks:
   - name: print loops
