@@ -18,5 +18,4 @@
   - name: print numbers less  than 5
     ansible.builtin.debug:
       msg: " The numbers which are greater than 5: {{ numbers }}"
-    when: number > 5
-    
+    when: numbers > 5
