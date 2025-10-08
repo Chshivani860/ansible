@@ -8,4 +8,4 @@
   tasks:
   - name: converting string to list
     ansible.builtin.debug:
-      msg: " technologies are: {{ technologies }}
+      msg: " technologies are: {{ technologies }}"
