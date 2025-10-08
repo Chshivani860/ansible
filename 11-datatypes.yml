@@ -6,10 +6,10 @@
     Course: "Devops with AWS"
     Duration: 4 
     is_live: true
-    tools: 
-    - "linux"
-    - "shell"
-    - "ansible"
+    tools: linux, shell, ansible
+    # - "linux"
+    # - "shell"
+    # - "ansible"
     concepts:
       cloud: AWS
       cm: ansible
