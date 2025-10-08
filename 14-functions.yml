@@ -4,8 +4,18 @@
 
   vars:
     technologies: Devops, Linux, Ansible, ShellScript
-  
+    tags:
+      application: payment
+      environment: Dev
   tasks:
+  - name: default variable
+    ansible.builtin.debug:
+      msg: " hell0, {{ name | default('shivani') }}"
+      
   - name: converting string to list
     ansible.builtin.debug:
       msg: " technologies are: {{ technologies | split(',') }}"
+
+  - name: converting dictionary to list
+    ansible.builtin.debug:
+      msg: "tags are: {{ tags | dict2items }} "
