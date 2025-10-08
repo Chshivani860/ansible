@@ -15,7 +15,7 @@
  
   tasks:
   - name: print numbers greater than 5
-  ansible.builtin.debug:
-    msg: "The number is: {{ item }}"
-  loop: "{{ numbers }}"
-  when: item > 5
+    ansible.builtin.debug:
+      msg: "The number is: {{ item }}
+    loop: "{{ numbers }}"
+    when: item > 5
