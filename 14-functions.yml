@@ -7,11 +7,18 @@
     tags:
       application: payment
       environment: Dev
+
+    listtags:
+    - key: application
+      value: payment
+    - key: environment
+      value: Dev
+
   tasks:
   - name: default variable
     ansible.builtin.debug:
       msg: " hell0, {{ name | default('shivani') }}"
-      
+
   - name: converting string to list
     ansible.builtin.debug:
       msg: " technologies are: {{ technologies | split(',') }}"
@@ -19,3 +26,7 @@
   - name: converting dictionary to list
     ansible.builtin.debug:
       msg: "tags are: {{ tags | dict2items }} "
+
+  - name: converting list into dictionary
+    ansible.builtin.debug:
+      msg: "listtags are: {{ listtags | list2dict }} "
