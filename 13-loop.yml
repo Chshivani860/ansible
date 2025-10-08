@@ -1,0 +1,19 @@
+- name: loops
+  hosts: local
+  connection: local
+  become: yess
+
+  tasks:
+  - name: print loops
+    ansible.builtin.debug:
+      name: "{{item}}" 
+      state: latest
+    loop:
+    - nginx
+    - mysql
+    - zip
+
+    # loop:
+    # - { name: "nginx", state: "latest" }
+    # - { name: "mysql", state: "absent" }
+    # - { name: "zip", state: "latest" }
