@@ -29,7 +29,7 @@
 
   - name: converting list into dictionary
     ansible.builtin.debug:
-      msg: "listtags are: {{ listtags | itemsdict2dict }} "
+      msg: "listtags are: {{ listtags | items2dict }} "
 
 
     
