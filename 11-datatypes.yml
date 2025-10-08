@@ -13,8 +13,8 @@
     concepts:
       cloud: AWS
       cm: ansible
-  tsaks:
+  tasks:
   - name: print course info
     ansible.builtin.debug:
       mag: "course: {{Course}}, Duration: {{ Duration }}, is_live: {{ is_live }}, tools: {{tools}}, concepts: {{ concepts}}"
-      
+
