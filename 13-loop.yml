@@ -8,12 +8,12 @@
     ansible.builtin.debug:
       msg: "{{item}}"
       
-    loop:
-    - nginx
-    - mysql
-    - zip
-
     # loop:
-    # - { name: "nginx", state: "latest" }
-    # - { name: "mysql", state: "absent" }
-    # - { name: "zip", state: "latest" }
+    # - nginx
+    # - mysql
+    # - zip
+
+    loop:
+    - { name: "nginx", state: "latest" }
+    - { name: "mysql", state: "absent" }
+    - { name: "zip", state: "latest" }
