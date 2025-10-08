@@ -7,7 +7,7 @@
   - name: print loops
     ansible.builtin.debug:
       msg: "{{item}}"
-      state: latest
+      
     loop:
     - nginx
     - mysql
